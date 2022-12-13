@@ -1,7 +1,7 @@
 class board{
     tile[][] board;
-    int whiteCounter = 12;
-    int blackCounter = 12;
+  //  int whiteCounter = 12;
+  //  int blackCounter = 12;
 
 
     /**
@@ -17,15 +17,15 @@ class board{
      * @return int which represents the value of the player. 1 will represent black win. 
      * 2 will represent white win.
      */
-    public int endGame(){
-        if (whiteCounter <= 0){
-            return 1;
-        }
-        else if (blackCounter <= 0){
-            return 2;
-        }
-        return 0;
-    }
+  //  public int endGame(){
+   //     if (whiteCounter <= 0){
+ //           return 1;
+ //       }
+  //      else if (blackCounter <= 0){
+//            return 2;
+ //       }
+  //      return 0;
+//    }
     
 
 
@@ -63,7 +63,19 @@ class board{
 
     /**
      * Putting the pieces onto the board.
-     */
+     */ 
+    public void initialization(){
+        for (int i = 1; i < 8; i += 2){
+            board[0][i] = new pieces(0, i, "black", "pawn");
+            board[2][i] = new pieces(2, i, "black", "pawn");
+            board[6][i] = new pieces(6, i, "white", "pawn");
+        }
+        for (int i = 0; i < 8; i += 2){
+            board[1][i] = new pieces(1, i, "black", "pawn");
+            board[5][i] = new pieces(5, i, "white", "pawn");
+            board[7][i] = new pieces(7, i, "white", "pawn");
+        }
+    }
 
     
 
@@ -71,8 +83,8 @@ class board{
      * prints the board to the terminal
      */
     public void printboard(){
-        System.out.println("    0   1   2   3   4   5   6   7   8   9   10   11   12   13   14   15");
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("    0   1   2   3   4   5   6   7   8   9  10  11  12  13  14");
+        System.out.println("-----------------------------------------------------------------");
         for (int i = 0; i < 15; i++){
             System.out.print(i + " | ");
         for (int j = 0; j < 15; j++){
@@ -84,7 +96,7 @@ class board{
             }
         }
         System.out.println();
-        System.out.println("-----------------------------------");
+        System.out.println("-----------------------------------------------------------------");
     }
     }
  

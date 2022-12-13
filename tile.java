@@ -2,13 +2,14 @@ class tile{
     private int x;
     private int y;
     private String letter;
-
+    private String multi;
 
   
-    public tile(int x, int y, String letter){
+    public tile(int x, int y, String letter, String multi){
         this.x = x;
         this.y = y;
         this.letter = letter;
+        this.multi = multi;
 
     }
     
@@ -17,6 +18,7 @@ class tile{
         this.x = p.x;
         this.y = p.y;
         this.letter = p.letter;
+        this.multi = p.multi;
     }
 
   
@@ -45,6 +47,12 @@ class tile{
     public String getLetter() {
         return letter;
     }
+    
+    public String getMulti() {
+      return multi;
+    }
+    
+    
 
   
   

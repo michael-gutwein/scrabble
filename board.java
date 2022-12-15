@@ -1,7 +1,7 @@
 class board{
     tile[][] board;
-    int whiteCounter = 12;
-    int blackCounter = 12;
+  //  int whiteCounter = 12;
+  //  int blackCounter = 12;
 
 
     /**
@@ -9,23 +9,25 @@ class board{
      */
     public board(){
         board = new tile[15][15];
+        initialization();
 
     }
     
+
 
     /**
      * @return int which represents the value of the player. 1 will represent black win. 
      * 2 will represent white win.
      */
-    public int endGame(){
-        if (whiteCounter <= 0){
-            return 1;
-        }
-        else if (blackCounter <= 0){
-            return 2;
-        }
-        return 0;
-    }
+  //  public int endGame(){
+   //     if (whiteCounter <= 0){
+ //           return 1;
+ //       }
+  //      else if (blackCounter <= 0){
+//            return 2;
+ //       }
+  //      return 0;
+//    }
     
 
 
@@ -62,17 +64,82 @@ class board{
 
 
     /**
-     * Putting the pieces onto the board.
-     */
+     * Putting the multipliers onto the board.
+     */ 
+    public void initialization(){
+        for (int i = 1; i < 8; i += 2){ //row one done
+            board[0][0] = new tile(0, 0, "tw");
+            board[0][3] = new tile(0, 0, "dl");
+            board[0][7] = new tile(0, 0, "tw");
+            board[0][11] = new tile(0, 0, "dl");
+            board[0][14] = new tile(1, 1, "tw");
+            board[1][1] = new tile(1, 1, "dw");
+            board[1][5] = new tile(1, 1, "tl");
+            board[1][9] = new tile(1, 1, "tl");
+            board[1][13] = new tile(1, 13, "dw");
+            board[2][2] = new tile(1, 1, "dw");
+            board[2][6] = new tile(1, 1, "dl");
+            board[2][8] = new tile(1, 1, "dl");
+            board[2][12] = new tile(1, 1, "dw");
+            board[3][3] = new tile(1, 1, "dw");
+            board[3][0] = new tile(1, 1, "dl");
+            board[3][7] = new tile(1, 1, "dl");
+            board[3][11] = new tile(1, 1, "dw");
+            board[3][14] = new tile(1, 1, "dl");
+            board[4][4] = new tile(1, 1, "dw");
+            board[4][10] = new tile(1, 1, "dw");
+            board[5][5] = new tile(1, 1, "tl");
+            board[5][1] = new tile(1, 1, "tl");
+            board[5][9] = new tile(1, 1, "tl");
+            board[5][13] = new tile(1, 1, "tl");
+            board[6][6] = new tile(1, 1, "dl");
+            board[6][2] = new tile(1, 1, "dl");
+            board[6][8] = new tile(1, 1, "dl");
+            board[6][12] = new tile(1, 1, "dl");
+            board[7][0] = new tile(1, 1, "tw");
+            board[7][3] = new tile(1, 1, "dl");
+            board[7][7] = new tile(1, 1, "*");
+            board[7][11] = new tile(1, 1, "dl");
+            board[7][14] = new tile(1, 1, "tw");
+            board[8][2] = new tile(1, 1, "dl");
+            board[8][8] = new tile(1, 1, "dl");
+            board[8][6] = new tile(1, 1, "dl");
+            board[8][12] = new tile(1, 1, "dl");
+            board[9][1] = new tile(1, 1, "tl");
+            board[9][5] = new tile(1, 1, "tl");
+            board[9][9] = new tile(1, 1, "tl");
+            board[9][13] = new tile(1, 1, "tl");
+            board[10][4] = new tile(1, 1, "dw");
+            board[10][10] = new tile(1, 1, "dw");
+            board[11][0] = new tile(1, 1, "dl");
+            board[11][3] = new tile(1, 1, "dw");
+            board[11][7] = new tile(1, 1, "dl");
+            board[11][11] = new tile(1, 1, "dw");
+            board[11][14] = new tile(1, 1, "dl");
+            board[12][2] = new tile(1, 1, "dw");
+            board[12][6] = new tile(1, 1, "dl");
+            board[12][8] = new tile(1, 1, "dl");
+            board[12][12] = new tile(1, 1, "dw");
+            board[13][1] = new tile(1, 1, "dw");
+            board[13][5] = new tile(1, 1, "tl");
+            board[13][9] = new tile(1, 1, "tl");
+            board[13][13] = new tile(1, 1, "dw");
+            board[14][14] = new tile(1, 1, "tw");
+            board[14][0] = new tile(1, 1, "dl");
+            board[14][3] = new tile(1, 1, "tw");
+            board[14][7] = new tile(1, 1, "dl");
+            board[14][12] = new tile(1, 1, "tw");
+        }
+    }
 
-    
+     
 
     /**
      * prints the board to the terminal
      */
     public void printboard(){
-        System.out.println("    0   1   2   3   4   5   6   7   8   9   10   11   12   13   14   15");
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("    0   1   2   3   4   5   6   7   8   9  10  11  12  13  14");
+       
         for (int i = 0; i < 15; i++){
             System.out.print(i + " | ");
         for (int j = 0; j < 15; j++){
@@ -84,7 +151,7 @@ class board{
             }
         }
         System.out.println();
-        System.out.println("-----------------------------------");
+        System.out.println("-----------------------------------------------------------------");
     }
     }
  

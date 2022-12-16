@@ -68,67 +68,67 @@ class board{
      */ 
     public void initialization(){
         for (int i = 1; i < 8; i += 2){ //row one done
-            board[0][0] = new tile(0, 0, "tw");
-            board[0][3] = new tile(0, 0, "dl");
-            board[0][7] = new tile(0, 0, "tw");
-            board[0][11] = new tile(0, 0, "dl");
-            board[0][14] = new tile(1, 1, "tw");
-            board[1][1] = new tile(1, 1, "dw");
-            board[1][5] = new tile(1, 1, "tl");
-            board[1][9] = new tile(1, 1, "tl");
-            board[1][13] = new tile(1, 13, "dw");
-            board[2][2] = new tile(1, 1, "dw");
-            board[2][6] = new tile(1, 1, "dl");
-            board[2][8] = new tile(1, 1, "dl");
-            board[2][12] = new tile(1, 1, "dw");
-            board[3][3] = new tile(1, 1, "dw");
-            board[3][0] = new tile(1, 1, "dl");
-            board[3][7] = new tile(1, 1, "dl");
-            board[3][11] = new tile(1, 1, "dw");
-            board[3][14] = new tile(1, 1, "dl");
-            board[4][4] = new tile(1, 1, "dw");
-            board[4][10] = new tile(1, 1, "dw");
-            board[5][5] = new tile(1, 1, "tl");
-            board[5][1] = new tile(1, 1, "tl");
-            board[5][9] = new tile(1, 1, "tl");
-            board[5][13] = new tile(1, 1, "tl");
-            board[6][6] = new tile(1, 1, "dl");
-            board[6][2] = new tile(1, 1, "dl");
-            board[6][8] = new tile(1, 1, "dl");
-            board[6][12] = new tile(1, 1, "dl");
-            board[7][0] = new tile(1, 1, "tw");
-            board[7][3] = new tile(1, 1, "dl");
+            board[0][0] = new tile(0, 0, "@");
+            board[0][3] = new tile(0, 0, "&");
+            board[0][7] = new tile(0, 0, "@");
+            board[0][11] = new tile(0, 0, "&");
+            board[0][14] = new tile(1, 1, "@");
+            board[1][1] = new tile(1, 1, "%");
+            board[1][5] = new tile(1, 1, "#");
+            board[1][9] = new tile(1, 1, "#");
+            board[1][13] = new tile(1, 13, "%");
+            board[2][2] = new tile(1, 1, "%");
+            board[2][6] = new tile(1, 1, "&");
+            board[2][8] = new tile(1, 1, "&");
+            board[2][12] = new tile(1, 1, "%");
+            board[3][3] = new tile(1, 1, "%");
+            board[3][0] = new tile(1, 1, "&");
+            board[3][7] = new tile(1, 1, "&");
+            board[3][11] = new tile(1, 1, "%");
+            board[3][14] = new tile(1, 1, "&");
+            board[4][4] = new tile(1, 1, "%");
+            board[4][10] = new tile(1, 1, "%");
+            board[5][5] = new tile(1, 1, "#");
+            board[5][1] = new tile(1, 1, "#");
+            board[5][9] = new tile(1, 1, "#");
+            board[5][13] = new tile(1, 1, "#");
+            board[6][6] = new tile(1, 1, "&");
+            board[6][2] = new tile(1, 1, "&");
+            board[6][8] = new tile(1, 1, "&");
+            board[6][12] = new tile(1, 1, "&");
+            board[7][0] = new tile(1, 1, "@");
+            board[7][3] = new tile(1, 1, "&");
             board[7][7] = new tile(1, 1, "*");
-            board[7][11] = new tile(1, 1, "dl");
-            board[7][14] = new tile(1, 1, "tw");
-            board[8][2] = new tile(1, 1, "dl");
-            board[8][8] = new tile(1, 1, "dl");
-            board[8][6] = new tile(1, 1, "dl");
-            board[8][12] = new tile(1, 1, "dl");
-            board[9][1] = new tile(1, 1, "tl");
-            board[9][5] = new tile(1, 1, "tl");
-            board[9][9] = new tile(1, 1, "tl");
-            board[9][13] = new tile(1, 1, "tl");
-            board[10][4] = new tile(1, 1, "dw");
-            board[10][10] = new tile(1, 1, "dw");
-            board[11][0] = new tile(1, 1, "dl");
-            board[11][3] = new tile(1, 1, "dw");
-            board[11][7] = new tile(1, 1, "dl");
-            board[11][11] = new tile(1, 1, "dw");
-            board[11][14] = new tile(1, 1, "dl");
-            board[12][2] = new tile(1, 1, "dw");
-            board[12][6] = new tile(1, 1, "dl");
-            board[12][8] = new tile(1, 1, "dl");
-            board[12][12] = new tile(1, 1, "dw");
-            board[13][1] = new tile(1, 1, "dw");
-            board[13][5] = new tile(1, 1, "tl");
-            board[13][9] = new tile(1, 1, "tl");
-            board[13][13] = new tile(1, 1, "dw");
-            board[14][14] = new tile(1, 1, "tw");
-            board[14][0] = new tile(1, 1, "dl");
-            board[14][3] = new tile(1, 1, "tw");
-            board[14][7] = new tile(1, 1, "dl");
-            board[14][12] = new tile(1, 1, "tw");
+            board[7][11] = new tile(1, 1, "&");
+            board[7][14] = new tile(1, 1, "@");
+            board[8][2] = new tile(1, 1, "&");
+            board[8][8] = new tile(1, 1, "&");
+            board[8][6] = new tile(1, 1, "&");
+            board[8][12] = new tile(1, 1, "&");
+            board[9][1] = new tile(1, 1, "#");
+            board[9][5] = new tile(1, 1, "#");
+            board[9][9] = new tile(1, 1, "#");
+            board[9][13] = new tile(1, 1, "#");
+            board[10][4] = new tile(1, 1, "%");
+            board[10][10] = new tile(1, 1, "%");
+            board[11][0] = new tile(1, 1, "&");
+            board[11][3] = new tile(1, 1, "%");
+            board[11][7] = new tile(1, 1, "&");
+            board[11][11] = new tile(1, 1, "%");
+            board[11][14] = new tile(1, 1, "&");
+            board[12][2] = new tile(1, 1, "%");
+            board[12][6] = new tile(1, 1, "&");
+            board[12][8] = new tile(1, 1, "&");
+            board[12][12] = new tile(1, 1, "%");
+            board[13][1] = new tile(1, 1, "%");
+            board[13][5] = new tile(1, 1, "#");
+            board[13][9] = new tile(1, 1, "#");
+            board[13][13] = new tile(1, 1, "%");
+            board[14][14] = new tile(1, 1, "@");
+            board[14][0] = new tile(1, 1, "&");
+            board[14][3] = new tile(1, 1, "@");
+            board[14][7] = new tile(1, 1, "@");
+            board[14][12] = new tile(1, 1, "%");
         }
     }
 
@@ -138,6 +138,12 @@ class board{
      * prints the board to the terminal
      */
     public void printboard(){
+        System.out.println("*= center");
+        System.out.println("& = dl");
+        System.out.println("% = dw");
+        System.out.println("# = tl");
+        System.out.println("@ = tw");
+        
         System.out.println("    0   1   2   3   4   5   6   7   8   9  10  11  12  13  14");
        
         for (int i = 0; i < 15; i++){

@@ -11,13 +11,14 @@ class player{
       
  }
  
- 
 
  
  
- 
- 
- 
+ static void draw(){
+   
+   //random 
+   
+ }
  
  
  

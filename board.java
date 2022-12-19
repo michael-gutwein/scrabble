@@ -1,4 +1,4 @@
-class board{
+class board{ //class that constructs the board
     tile[][] board;
   //  int whiteCounter = 12;
   //  int blackCounter = 12;

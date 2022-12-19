@@ -1,4 +1,4 @@
-//testing stuff
+//testing stuff //class for logic
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

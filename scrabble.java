@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //main
  
 class scrabble{
  public static int[] getInput(){
@@ -23,9 +23,11 @@ Scanner input = new Scanner(System.in);
         board g = new board();
        int count = input.nextInt();
        System.out.println(count);
-       if(count == 2){
+       if(count == 2){ 
         player a = new player (0, "a");
         player b = new player (0, "b");
+        
+        
        
        }
        else if(count == 3) {
@@ -45,6 +47,7 @@ Scanner input = new Scanner(System.in);
        else{
          throw new IllegalArgumentException();
        }
+       
        
        
        

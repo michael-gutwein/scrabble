@@ -12,7 +12,7 @@ class scrabble{
         int[] inputArray = {placeX, placeY};
         return inputArray;
  }
- 
+  
  
         
 
